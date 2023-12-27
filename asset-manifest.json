@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ArsaOnlineStore/static/css/main.3581d23b.css",
+    "main.js": "/ArsaOnlineStore/static/js/main.d9488319.js",
+    "index.html": "/ArsaOnlineStore/index.html",
+    "main.3581d23b.css.map": "/ArsaOnlineStore/static/css/main.3581d23b.css.map",
+    "main.d9488319.js.map": "/ArsaOnlineStore/static/js/main.d9488319.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3581d23b.css",
+    "static/js/main.d9488319.js"
+  ]
+}
