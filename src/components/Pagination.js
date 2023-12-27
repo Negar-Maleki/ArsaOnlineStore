@@ -1,4 +1,4 @@
-export function Pagination({ onSetPage, page, productsPerPage, products }) {
+export function Pagination({ onSetPage, page, numOfPages }) {
   return (
     <div className="pagination-main-div">
       <svg
@@ -40,7 +40,7 @@ export function Pagination({ onSetPage, page, productsPerPage, products }) {
         fill="currentColor"
         className="pagination"
         onClick={() => {
-          if (productsPerPage.length > 0) onSetPage(page + 1);
+          if (page < numOfPages) onSetPage(page + 1);
         }}
       >
         <path
@@ -56,8 +56,7 @@ export function Pagination({ onSetPage, page, productsPerPage, products }) {
         fill="currentColor"
         className="pagination"
         onClick={() => {
-          if (productsPerPage.length > 0)
-            onSetPage(Math.ceil(products.length / productsPerPage.length));
+          onSetPage(numOfPages);
         }}
       >
         <path

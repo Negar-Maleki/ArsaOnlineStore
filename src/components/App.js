@@ -273,12 +273,11 @@ export default function App() {
       sortAndFilteredItems = sortAndFilteredItems.sort(
         (a, b) => Number(a.rating.rate) - Number(b.rating.rate)
       );
-
-    if (sortBy === "low")
+    else if (sortBy === "low")
       sortAndFilteredItems = sortAndFilteredItems.sort(
         (a, b) => Number(a.price) - Number(b.price)
       );
-    if (sortBy === "high")
+    else if (sortBy === "high")
       sortAndFilteredItems = sortAndFilteredItems.sort(
         (a, b) => Number(b.price) - Number(a.price)
       );

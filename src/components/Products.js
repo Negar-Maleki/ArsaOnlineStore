@@ -10,6 +10,8 @@ export function Products({ products, onSelectProduct, onUpdateCart, cart }) {
     itemsPerPage * curPage
   );
 
+  const numOfPages = Math.ceil(products.length / itemsPerPage);
+
   return (
     <div className="products-sec">
       <select
@@ -24,8 +26,7 @@ export function Products({ products, onSelectProduct, onUpdateCart, cart }) {
       <Pagination
         onSetPage={setCurpage}
         page={curPage}
-        productsPerPage={productsPerPage}
-        products={products}
+        numOfPages={numOfPages}
       />
       <div className="products">
         {productsPerPage.length > 0 &&
